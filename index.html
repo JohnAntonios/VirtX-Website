@@ -5,10 +5,13 @@
     <title>VirtX</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="css/video_parallax.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" charset="utf-8" src="https://cdn.rawgit.com/thiagopnts/kaleidoscope/master/dist/kaleidoscope.min.js">
+    </script>
+
+
 </head>
 
 <body>
@@ -16,7 +19,7 @@
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
         <div class="d-flex flex-grow-1">
             <a class="navbar-brand d-md-inline-block" href="#">
-                <img src="https://via.placeholder.com/30x30" class="d-inline-block align-top" alt="VIRTX LOGO GOES HERE">                VirtX
+                <img src="https://via.placeholder.com/30x30" class="d-inline-block align-top" alt="VIRTX LOGO GOES HERE"> VirtX
             </a>
             <div class="w-100 text-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -46,17 +49,19 @@
     <div class="parallax">
         <div class="container d-flex justify-content-center align-items-center parallax-content" style="height:100vh;">
             <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column">
-                <h1>Virtual XR</h1>
-                <p>Its like dreaming, but with your eyes open.</p>
+                <h1>Virt X</h1>
+                <p>Sydney's Community of Practice for all realities</p>
                 <div class="row">
                 </div>
             </div>
         </div>
-        <video autoplay="" muted="" loop="" class="parallax-background">
-            <source src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GTYSdDW/360-video-of-beach-and-pier_H5e_Jtfa__WM.mp4" type="video/mp4"
+
+        <div class="parallax-background" id="container360"></div>
+        <!-- <video autoplay="" muted="" loop="" class="parallax-background" id="container360"> 
+        <source src="vr.mp4" type="video/mp4"
                 wp-acf="[{'type':'url','name':'video','label':'Video','wrapper':{'width':25}},{'type':'text','name':'video_css','label':'Video CSS (eg. filters)','wrapper':{'width':25}}]"
                 wp-attr="[{'target':'src','replace':'%1'},{'target':'parent_style','replace':'%2'}]">
-        </video>
+        </video> -->
         <div class="parallax-placeholder"></div>
     </div>
 
@@ -64,24 +69,17 @@
     <div class="container-fluid">
         <div class="row mt-4">
             <div class="col">
-                <h1 class="text-center h1">What We Are</h1>
+                <h1 class="text-center h1">Who We Are</h1>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-sm-6">
-                <img src="https://via.placeholder.com/350x420" class="img-fluid" style="display: block; margin: auto;">
+                <img src="media/whoweare.jpg" class="img-fluid" style="display: block; margin: auto;">
             </div>
             <div class="col-sm-5">
                 <p class="lead text-left mt-3">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-                    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
-                    eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-                    eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                    dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
-                    rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget
-                    dui. Etiam rhoncus.
+                    VirtX is a multi-disciplinary team of researchers, educators, industry partners, and students loosely based around the University of Sydney who are passionate about XR. Established at the University of Sydney Techlab in 2018 this team openly shares resources
+                    for bringing XR to the masses, through workshops, demonstrations, free content and openly published research.
                 </p>
             </div>
         </div>
@@ -94,10 +92,16 @@
             <div class="carousel-inner row w-100 mx-auto">
                 <div class="carousel-item col-md-4 active">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="media/jim.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title">Member name 1</h4>
-                            <p class="card-text">Member desc.</p>
+                            <h4 class="card-title">Jim Cook</h4>
+                            <p class="card-text">Innovation Lead, the University of Sydney TechLab
+                                <ul>
+                                    <li>6 years Virtual and Mixed Reality Development Experience.</li>
+                                    <li>Specialist in Emerging technology in Education.</li>
+                                    <li>Founder of the Precognition Factory, Australia's leading Industry X.0 consultancy.</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +139,7 @@
                     <img class="card-img-top img-fluid" src="..." alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Immerse yourself into XR now.</p>
-                        <a href="#" class="btn btn-primary">LEARN MORE</a>
+                        <a href="#" class="btn btn-danger">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -143,20 +147,18 @@
     </div>
     <footer class="footer" style="background-color: gray">
         <div class="container">
-            <span class="text-white">Copyright.</span>
+            <span class="text-white">Copyright VirtX Online 2018.</span>
         </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="js/video_parallax.js"></script>
-    <script src="js/main.js"></script>
+
 </body>
+<script src="js/main.js"></script>
 
 </html>
