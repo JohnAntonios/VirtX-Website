@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #e96443, #904e95);
+    background: linear-gradient(to bottom, #e97558, #a563aa);
 }
 
 .hvr-underline-from-left {
@@ -29,4 +29,40 @@ body {
 }
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
+}
+
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page span{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+  width: 100px;
+  height: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background: #ccc;
+  border:none;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  background: #3F51B5;
+}
+
+.partners {
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.partner-img {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.member-card {
+    min-height: 46em;
 }
