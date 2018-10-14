@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     // Members carousel.
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -36,5 +37,24 @@ $(document).ready(function() {
           lastScrollTop = st;
         });
     });
+
+    // 360 Video: Kaleidoscope.js
+    (function() {
+        var containerSelector = '#container360';
+        this.viewer = new Kaleidoscope.Video({
+            source: 'vr.mp4',
+            containerId: containerSelector,
+            height: window.innerHeight,
+            width: window.innerWidth,
+            loop: true,
+        });
+        this.viewer.render();
+        window.onresize = function() {
+            this.viewer.setSize({
+                height: window.innerHeight,
+                width: window.innerWidth
+            });
+        }.bind(this);
+    })();
 });
 

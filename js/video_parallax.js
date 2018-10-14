@@ -16,7 +16,6 @@ $(document).ready(function () {
                 'width': 'auto',
                 'min-height': '100vh',
                 top: 0, left: 0,
-                zIndex: -100,
                 display: 'block'
             });
             backgrounds.push(bg);

@@ -14,7 +14,7 @@
 
 <body>
     <!--This is the navbar, replace the IMG tag below with the VirtX Logo. Fully responsive.-->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light" id="navbar"    >
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light" id="navbar">
         <div class="d-flex flex-grow-1">
             <a class="navbar-brand d-md-inline-block" href="#">
                 <img src="https://via.placeholder.com/30x30" class="d-inline-block align-top" alt="VIRTX LOGO GOES HERE">VirtX
@@ -46,19 +46,17 @@
     <!--Jumbo: Parallax video, CHANGE THE LINK IN THE SOURCE TAG TO THE VIDEO-->
     <div class="parallax">
         <div class="container d-flex justify-content-center align-items-center parallax-content" style="height:100vh;">
-            <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column">
-                <h1>Virtual XR</h1>
-                <p>Its like dreaming, but with your eyes open.</p>
+            <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column" style="z-index: 1">
+                <h1>VirtX</h1>
+                <p>Sydney's Community of Practice for all realities</p>
+                <br>
+                <br>
+                <small class="text-center" >Click to drag around this cool 360 video!</small>
                 <div class="row">
                 </div>
             </div>
         </div>
-        <video autoplay="" muted="" loop="" class="parallax-background">
-            <source src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GTYSdDW/360-video-of-beach-and-pier_H5e_Jtfa__WM.mp4" type="video/mp4"
-                wp-acf="[{'type':'url','name':'video','label':'Video','wrapper':{'width':25}},{'type':'text','name':'video_css','label':'Video CSS (eg. filters)','wrapper':{'width':25}}]"
-                wp-attr="[{'target':'src','replace':'%1'},{'target':'parent_style','replace':'%2'}]">
-        </video>
-        <div class="parallax-placeholder"></div>
+        <div class="parallax-background" id="container360"></div>
     </div>
 
     <!--Jumbo: What we are-->
@@ -71,17 +69,17 @@
         </div>
         <div class="row mt-4">
             <div class="col-sm-6">
-                <img src="https://via.placeholder.com/350x420" class="img-fluid img-thumbnail" style="display: block; margin: auto;">
+                <img src="assets/whoweare.jpg" class="img-fluid img-thumbnail" style="display: block; margin: auto;">
             </div>
             <div class="col-sm-5">
                 <p class="lead text-left mt-3 text-white"><em>
-                    VirtX is a multi-disciplinary team of researchers, educators, industry partners, and students loosely based around the University of Sydney who are passionate about XR. 
+                    VirtX is a multi-disciplinary team of researchers, educators, industry partners, and students loosely based around the University of Sydney who are passionate about XR.<br> 
                     Established at the University of Sydney Techlab in 2018, this team openly shares resources for bringing XR to the masses, through workshops, demonstrations, free content and openly published research.
                 </em></p>
             </div>
         </div>
     </div>
-    <hr>
+    <br>
     <!--Jumbo: Members-->
     <div class="container-fluid">
         <span id="members"></span>
@@ -137,7 +135,7 @@
             </div>
         </div>
     </div>
-    <hr>
+    <br>
     <div class="container-fluid">
         <div class="row mt-4">
             <div class="col">
@@ -147,14 +145,14 @@
         </div>
         <div class="row mt-4">
             <div class="col">
-                <div class=" text-center">
-                        <p class="card-text">Immerse yourself into XR now.</p>
-                        <a href="#" class="btn btn-primary">LEARN MORE</a>
+                <div class="text-center">
+                        <p class="lead-text">VirtX online is curatng a collection of free XR resources developed by our members and Industry partners, click below to access our library.</p>
+                        <a href="https://github.com/usydtechlab/VirtX_Resources" target="_blank" class="btn btn-danger">Access Our Library</a>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
+    <br>
     <div class="container-fluid partners">
         <div class="row">
             <div class="col">
@@ -164,26 +162,30 @@
         </div>
         <div class="row">
             <div class="col text-center ">
-                    <a href="https://sydney.edu.au/"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/usyd.jpg"></a>
-                    <a href="http://crlionline.net/"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/crlionline.PNG"></a>
-                    <a href="http://ramus.com.au/"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/ramus.png"></a>
+                    <a href="https://sydney.edu.au/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/usyd.jpg"></a>
+                    <a href="http://crlionline.net/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/crlionline.PNG"></a>
+                    <a href="http://ramus.com.au/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/ramus.png"></a>
             </div>
         </div>
         <div class="row">
             <div class="col text-center mt-3 mb-3">
-                <a href="http://transmedia-entertainment.com/"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/transmedia.png"></a>
-                <a href="https://www.ustwo.com/"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/ustwo.PNG"></a>
-                <a href="https://www.wslhd.health.nsw.gov.au/Westmead-Hospital"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/westmead.png"></a>
-                <a href="https://www.facebook.com/"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/facebook.jpg"></a>
+                <a href="http://transmedia-entertainment.com/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/transmedia.png"></a>
+                <a href="https://www.ustwo.com/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/ustwo.PNG"></a>
+                <a href="https://www.wslhd.health.nsw.gov.au/Westmead-Hospital" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/westmead.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200"  src="assets/partner_logos/facebook.jpg"></a>
             </div>
         </div>
     </div>
-    <hr>
-    <footer class="footer" style="background-color: gray">
-        <div class="container">
-            <span class="text-white">Copyright.</span>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color: whitesmoke">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="index.html">virtx.online</a>
+    </div>
+
+  </footer>
+  <!-- Footer -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -191,6 +193,7 @@
         crossorigin="anonymous"></script>
     <script src="js/video_parallax.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/kaleidoscope.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
