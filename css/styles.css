@@ -1,9 +1,7 @@
-/* BG Colour of website */
 body {
-    background: linear-gradient(to bottom, #e97558, #a563aa);
+    background: linear-gradient(to bottom, #e96443, #904e95);
 }
 
-/* Nav underlines */
 .hvr-underline-from-left {
     display: inline-block;
     vertical-align: middle;
@@ -31,36 +29,4 @@ body {
 }
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
-}
-
-/* Styling Carousel */
-.owl-theme .owl-controls .owl-page span{
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    width: 100px;
-    height: 5px;
-    margin-left: 2px;
-    margin-right: 2px;
-    background: #ccc;
-    border:none;
-}
-
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-    background: #3F51B5;
-}
-
-.partners {
-    background-color: white;
-}
-
-.partner-img {
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
 }
