@@ -49,7 +49,6 @@ $(document).ready(function() {
             width: window.innerWidth,
             autoplay: true,
             loop: true,
-
         });
         this.viewer.render();
         window.onresize = function() {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/video_parallax.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -45,19 +46,26 @@
 
     <!--Jumbo: Parallax video, CHANGE THE LINK IN THE SOURCE TAG TO THE VIDEO-->
     <div class="parallax">
-        <div class="container d-flex justify-content-center align-items-center parallax-content" style="height:100vh;">
-            <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column" style="z-index: 1">
+        <div class="container d-flex justify-content-center align-items-center parallax-content" style="height:100vh; flex-flow: column;">
+            <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column not-selectable" style="z-index: 1;">
                 <h1>VirtX</h1>
-                <p>Sydney's Community of Practice for all realities</p>
+                <p >Sydney's Community of Practice for all realities</p>
                 <br>
                 <br>
                 <small class="text-center">This is a 360 video. Click to drag.</small>
-                <div class="row">
-                </div>
+            </div>
+            <div class="col-xs-12 text-center not-selectable" style="z-index: 1; position: absolute; bottom: 5%; width: 100%;">
+                <a href="#what-we-are">
+                    <i class="fas fa-chevron-circle-down arrow-clicker"></i> 
+                </a>
             </div>
         </div>
+
         <div class="parallax-background" id="container360"></div>
+
+
     </div>
+
 
     <!--Jumbo: What we are-->
     <div class="container-fluid">
@@ -121,7 +129,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card member-card item">
+            <div class="card member-card item ">
                 <img class="img-fluid img-thumbnail" src="assets/member_imgs/TeganCheng.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Tegan Cheng</h4>
@@ -133,7 +141,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card member-card item">
+            <div class="card member-card item ">
                 <img class="img-fluid img-thumbnail" src="assets/member_imgs/PhilipPoronnik.jpeg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Philip Poronnik</h4>
@@ -145,19 +153,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="card member-card item">
+            <div class="card member-card item ">
                 <img class="img-fluid img-thumbnail" src="assets/member_imgs/NaseemAhmadpour.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Naseem Ahmadpour</h4>
                     <p class="card-text">Professor, The University of Sydney</p>
                     <ul>
                         <li>Design for wellbeing. Inspiring new designs that help us engage with activities that improve our quality of life</li>
-
                         <li>Emerging technologies can enhance motivation and experiences for self-regulating behaviour and emotions</li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
     <br>
