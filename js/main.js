@@ -6,6 +6,7 @@ $(document).ready(function() {
         loop: true,
         lazyLoad: true,
         margin: 10,
+        autoplay: true,
         responsive: {
             0: {
                 items: 1
@@ -46,7 +47,9 @@ $(document).ready(function() {
             containerId: containerSelector,
             height: window.innerHeight,
             width: window.innerWidth,
+            autoplay: true,
             loop: true,
+
         });
         this.viewer.render();
         window.onresize = function() {
