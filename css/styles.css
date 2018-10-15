@@ -1,5 +1,12 @@
 body {
     background: linear-gradient(to bottom, #e97558, #a563aa);
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
 
 .hvr-underline-from-left {
@@ -53,12 +60,11 @@ body {
     background-color: white;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-.member-card {
-    min-height: 100vh;
+.partner-img {
+    /* margin-right: 25px; */
+    margin-bottom: 25px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .not-selectable {

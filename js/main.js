@@ -6,7 +6,6 @@ $(document).ready(function() {
         loop: true,
         lazyLoad: true,
         margin: 10,
-        autoplay: true,
         responsive: {
             0: {
                 items: 1
@@ -47,28 +46,27 @@ $(document).ready(function() {
             containerId: containerSelector,
             height: window.innerHeight,
             width: window.innerWidth,
-            loop: true,
-            autoplay: true
+            autoplay: true,
+            loop: true
         });
         this.viewer.render();
         window.onresize = function() {
             this.viewer.setSize({height: window.innerHeight, width: window.innerWidth});
         }.bind(this);
+
         document.querySelector(containerSelector).addEventListener('touchend', this.viewer.play.bind(this.viewer));
-        document.body.addEventListener('click', function() {
+        document.body.addEventListener('onclickk', function() {
             this.viewer.play();
         }.bind(this));
     })();
 
     // Arrow click disappear.
-
     $('.arrow-clicker').click(function(){
         $('.arrow-clicker').fadeOut("slow");
     });
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        console.log(scroll);
 
         if (scroll < 850) {
             $('.arrow-clicker').fadeIn("slow");
@@ -76,4 +74,18 @@ $(document).ready(function() {
             $('.arrow-clicker').fadeOut("slow");
         }
     });
+
+    // Make all member cards equal height.
+    $('.member-container').each(function() {         
+        var highestBox = 0;
+
+        $('.member-card', this).each(function(){
+            if ($(this).height() > highestBox) {
+                highestBox = $(this).height(); 
+            }
+        });  
+            
+        $('.member-card', this).height(highestBox);
+                    
+    }); 
 });
