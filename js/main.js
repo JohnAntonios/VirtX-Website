@@ -39,7 +39,7 @@ $(document).ready(function() {
         });
     });
 
-    // 360 Video: Kaleidoscope.js
+    //360 video
     (function() {
         var containerSelector = '#container360';
         this.viewer = new Kaleidoscope.Video({
@@ -47,16 +47,33 @@ $(document).ready(function() {
             containerId: containerSelector,
             height: window.innerHeight,
             width: window.innerWidth,
-            autoplay: true,
             loop: true,
+            autoplay: true
         });
         this.viewer.render();
         window.onresize = function() {
-            this.viewer.setSize({
-                height: window.innerHeight,
-                width: window.innerWidth
-            });
+            this.viewer.setSize({height: window.innerHeight, width: window.innerWidth});
         }.bind(this);
+        document.querySelector(containerSelector).addEventListener('touchend', this.viewer.play.bind(this.viewer));
+        document.body.addEventListener('click', function() {
+            this.viewer.play();
+        }.bind(this));
     })();
-});
 
+    // Arrow click disappear.
+
+    $('.arrow-clicker').click(function(){
+        $('.arrow-clicker').fadeOut("slow");
+    });
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+
+        if (scroll < 850) {
+            $('.arrow-clicker').fadeIn("slow");
+        } else {
+            $('.arrow-clicker').fadeOut("slow");
+        }
+    });
+});
