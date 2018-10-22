@@ -46,16 +46,14 @@ $(document).ready(function() {
             containerId: containerSelector,
             height: window.innerHeight,
             width: window.innerWidth,
-            autoplay: true,
             loop: true
         });
         this.viewer.render();
         window.onresize = function() {
             this.viewer.setSize({height: window.innerHeight, width: window.innerWidth});
         }.bind(this);
-
         document.querySelector(containerSelector).addEventListener('touchend', this.viewer.play.bind(this.viewer));
-        document.body.addEventListener('onclickk', function() {
+        document.body.addEventListener('onclick', function() {
             this.viewer.play();
         }.bind(this));
     })();
