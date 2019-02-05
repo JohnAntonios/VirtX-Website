@@ -4,7 +4,6 @@ body {
 
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -56,10 +55,6 @@ html {
     background: #3F51B5;
 }
 
-.partners {
-    background-color: white;
-}
-
 .partner-img {
     /* margin-right: 25px; */
     margin-bottom: 25px;
@@ -96,6 +91,7 @@ html {
         -webkit-box-shadow: 0 0 0 0 rgba(147, 206, 240, 0);
     }
 }
+
 @keyframes pulse {
     0% {
         -moz-box-shadow: 0 0 0 0 rgba(147, 206, 240, 0.4);
