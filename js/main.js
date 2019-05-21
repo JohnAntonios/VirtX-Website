@@ -1,10 +1,12 @@
 $(document).ready(function() {
 	// Members carousel.
 	var owl = $(".owl-carousel");
+
 	owl.owlCarousel({
 		loop: true,
 		lazyLoad: true,
 		margin: 10,
+
 		responsive: {
 			0: {
 				items: 1
