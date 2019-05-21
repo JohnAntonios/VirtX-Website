@@ -1,247 +1,546 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>VirtX</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/video_parallax.css" />
+		<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+			integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
 
-<head>
-    <title>VirtX</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/video_parallax.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+	<body>
+		<!--This is the navbar, replace the IMG tag below with the VirtX Logo. Fully responsive.-->
+		<nav
+			class="navbar fixed-top navbar-expand-md navbar-light bg-light"
+			id="navbar"
+		>
+			<div class="d-flex flex-grow-1">
+				<a class="navbar-brand d-md-inline-block" href="#">
+					<img
+						src="https://via.placeholder.com/30x30"
+						class="d-inline-block align-top"
+						alt="VIRTX LOGO GOES HERE"
+					/>VirtX
+				</a>
+				<div class="w-100 text-right">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#myNavbar"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</div>
+			<div class="collapse navbar-collapse flex-grow-1" id="myNavbar">
+				<ul class="navbar-nav ml-auto flex-nowrap main-nav-list">
+					<li class="nav-item">
+						<a
+							href="#what-we-are"
+							class="nav-link m-2 menu-item hvr-underline-from-left"
+							>What We Are</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="#members"
+							class="nav-link m-2 menu-item hvr-underline-from-left"
+							>Members</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="#resources"
+							class="nav-link m-2 menu-item hvr-underline-from-left"
+							>Resources</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="#partners"
+							class="nav-link m-2 menu-item hvr-underline-from-left"
+							>Partners</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-<body>
-    <!--This is the navbar, replace the IMG tag below with the VirtX Logo. Fully responsive.-->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light" id="navbar">
-        <div class="d-flex flex-grow-1">
-            <a class="navbar-brand d-md-inline-block" href="#">
-                <img src="https://via.placeholder.com/30x30" class="d-inline-block align-top" alt="VIRTX LOGO GOES HERE">VirtX
-            </a>
-            <div class="w-100 text-right">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </div>
-        <div class="collapse navbar-collapse flex-grow-1" id="myNavbar">
-            <ul class="navbar-nav ml-auto flex-nowrap main-nav-list">
-                <li class="nav-item">
-                    <a href="#what-we-are" class="nav-link m-2 menu-item hvr-underline-from-left">What We Are</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#partners" class="nav-link m-2 menu-item hvr-underline-from-left">Partners</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#resources" class="nav-link m-2 menu-item hvr-underline-from-left">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#members" class="nav-link m-2 menu-item hvr-underline-from-left">Members</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+		<!--Jumbo: Parallax video, CHANGE THE LINK IN THE SOURCE TAG TO THE VIDEO-->
+		<div
+			class="container d-flex justify-content-center align-items-center parallax-content"
+			style="flex-flow: column;"
+		>
+			<div id="container360"></div>
+			<div
+				class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column not-selectable"
+				style="z-index: 1; position: absolute; width: 100%;"
+			>
+				<h1>VirtX</h1>
+				<p>Sydney's Community of Practice for all realities</p>
+				<br /><br />
+				<small class="text-center"
+					>This is a 360 video. Click to drag.</small
+				>
+			</div>
+			<div
+				class="col-xs-12 text-center not-selectable"
+				style="z-index: 1; position: absolute; bottom: 5%; width: 100%;"
+			>
+				<a href="#what-we-are"
+					><i class="fas fa-chevron-circle-down arrow-clicker"></i
+				></a>
+			</div>
+		</div>
 
-    <!--Jumbo: Parallax video, CHANGE THE LINK IN THE SOURCE TAG TO THE VIDEO-->
-    <div class="container d-flex justify-content-center align-items-center parallax-content" style="flex-flow: column;">
-        <div id="container360"></div>
-        <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column not-selectable" style="z-index: 1; position: absolute; width: 100%;">
-            <h1>VirtX</h1>
-            <p >Sydney's Community of Practice for all realities</p>
-            <br><br>
-            <small class="text-center">This is a 360 video. Click to drag.</small>
-        </div>
-        <div class="col-xs-12 text-center not-selectable" style="z-index: 1; position: absolute; bottom: 5%; width: 100%;">
-            <a href="#what-we-are"><i class="fas fa-chevron-circle-down arrow-clicker"></i></a>
-        </div>
-    </div>
-    
-    <!--Jumbo: What we are-->
-    <div class="container-fluid">
-        <div class="row mt-4">
-            <div class="col">
-                <span id="what-we-are"></span>
-                <h1 class="text-center h1">What We Are</h1>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-sm-6">
-                <img src="assets/whoweare.jpg" class="img-fluid img-thumbnail" style="display: block; margin: auto;">
-            </div>
-            <div class="col-sm-5">
-                <p class="lead text-left mt-3 text-white"><em>
-                    VirtX is a multi-disciplinary team of researchers, educators, industry partners, and students loosely based around the University of Sydney who are passionate about XR.<br> 
-                    Established at the University of Sydney Techlab in 2018, this team openly shares resources for bringing XR to the masses, through workshops, demonstrations, free content and openly published research.
-                </em></p>
-            </div>
-        </div>
-    </div>
-    <br>
-
-    <div class="container-fluid partners">
-        <div class="row">
-            <div class="col">
-                <span id="partners"></span>
-                <h1 class="text-center h1 mt-4">Partners</h1>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col text-center mb-3">
-                <a href="https://sydney.edu.au/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/usyd.jpg"></a>
-                <a href="http://crlionline.net/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/crlionline.PNG"></a>
-                <a href="http://ramus.com.au/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/ramus.png"></a>
-                <a href="http://trends.techlab.works/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/techlab.jpg"></a>
-                <a href="https://youtu.be/GCvgZKQflCY" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/delphine_plain_text.jpg"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-center mb-3">
-                <a href="http://transmedia-entertainment.com/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/transmedia.png"></a>
-                <a href="https://www.ustwo.com/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/ustwo.PNG"></a>
-                <a href="https://www.kloudppl.com.au/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/kloudppl.png"></a>
-                <a href="https://www.wslhd.health.nsw.gov.au/Westmead-Hospital" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/westmead.png"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/facebook.jpg"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-center mb-3">
-                <a href="https://sydney.edu.au/music/" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/usyd_music.png"></a>
-                <a href="https://sydney.edu.au/engineering/our-research/laboratories-and-facilities/immersive-learning-laboratory.html" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/ill.png"></a>
-                <a href="https://sydney.edu.au/arts/schools/sydney-college-of-the-arts.html" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/sca.png"></a>
-                <a href="mailto:denouement.vr@gmail.com" target="_blank"><img class="img-fluid img-thumbnail partner-img" width="200" height="200" src="assets/partner_logos/denouement.png"></a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row mt-4">
-            <div class="col">
-                <span id="resources"></span>
-                <h1 class="text-center h1">Resources</h1>
-            </div>
-        </div>
-        <div class="row mt-4">
-                <div class="col-sm-6">
-                    <img src="assets/resources.jpg" class="img-fluid img-thumbnail" style="display: block; margin: auto;">
-                </div>
-                <div class="col-sm-5">
-                    <p class="lead text-left mt-3 text-white">
-                        VirtX online is curatng a collection of free XR resources developed by our members and Industry partners, click below to access our library.
-                    </p>
-                    <div class="col text-center">
-                        <a href="https://github.com/usydtechlab/VirtX_Resources" target="_blank">
-                            <button class="btn btn-danger">Access Our Library</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <br>
-
-<!--Jumbo: Members-->
-<div class="container-fluid">
-    <span id="members"></span>
-    <h1 class="text-center mb-3">Members</h1>
-    <div class="owl-carousel owl-theme member-container">
-        <div class="member-card card">
-            <img class="card-img-top img-thumbnail" src="assets/member_imgs/JimCook.jpg">
-            <div class="card-body">
-                <h4 class="card-title">Jim Cook</h4>
-                <p class="card-text">Innovation Lead, the University of Sydney Techlab</p>
-                <ul>
-                    <li>6 years Virtual and Mixed Reality development experience.</li>
-                    <li>Specialist in emerging technology in education.</li>
-                    <li>Founder of the Precognition Factory, Australia's leading Industry X.0 consultancy.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="member-card card">
-            <img class="card-img-top img-thumbnail" src="assets/member_imgs/MartinBrown.png" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title">Martin Brown</h4>
-                <p class="card-text">Educational Design Manager</p>
-                <ul>
-                    <li>Filmmaker and media practitioner</li>
-                    <li>Founder AFTRS Innovation Lab</li>
-                    <li>Manager, Westmead Innovative Technology Steering Group</li>
-                </ul>
-            </div>
-        </div>
-        <div class="member-card card">
-            <img class="img-fluid img-thumbnail" src="assets/member_imgs/PhillipGough.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title">Phillip Gough</h4>
-                <p class="card-text">Lecturer in Curriculum Innovation, School of Life and Environmental Sciences, The University of Sydney</p>
-                <ul>
-                    <li>Digital artist, designer and creative technologist</li>
-                    <li>Researching creative modes of data visualisation</li>
-                    <li>Exploring how to teach creative and designerly methods and technologies in the undergraduate science curriculum</li>
-                </ul>
-            </div>
-        </div>
-        <div class="member-card card">
-            <img class="img-fluid img-thumbnail" src="assets/member_imgs/TeganCheng.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title">Tegan Cheng</h4>
-                <p class="card-text">Biomedical engineer and scientist, Kids Research Institute at the Children's Hospital at Westmead.</p>
-                <ul>
-                    <li>Tissue engineer</li>
-                    <li>Developer of novel orthopedic devices for children</li>
-                    <li>specialist in the integration of 3D scanning and printing technologies into clinical practice</li>
-                </ul>
-            </div>
-        </div>  
-        <div class="member-card card">
-            <img class="img-fluid img-thumbnail" src="assets/member_imgs/PhilipPoronnik.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title">Philip Poronnik</h4>
-                <p class="card-text">Professor of Biomedical Sciences (Educational Strategy), The University of Sydney.</p>
-                <ul>
-                    <li>He attac</li>
-                    <li>de rejec</li>
-                    <li>but most of all, he protec</li>
-                </ul>
-            </div>
-        </div>  
-        <div class="member-card card">
-            <img class="img-fluid img-thumbnail" src="assets/member_imgs/NaseemAhmadpour.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title">Naseem Ahmadpour</h4>
-                <p class="card-text">Professor, The University of Sydney</p>
-                <ul>
-                    <li>Design for wellbeing. Inspiring new designs that help us engage with activities that improve our quality of life</li>
-                    <li>Emerging technologies can enhance motivation and experiences for self-regulating behaviour and emotions</li>
-                </ul>
-            </div>
-        </div>
-        <div class="member-card card">
-            <img class="img-fluid img-thumbnail" src="assets/member_imgs/ChrisHamming.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title">Christopher Hamming</h4>
-                <p class="card-text">Educational Designer, The University of Sydney</p>
-                <ul>
-                    <li>Enhancing the digital literacy of life science students.</li>
-                    <li>Developing activites where students create virtual reality scenes, science communication videos and visual representations of biological structures and concepts.</li>
-                    <li>Projects are informed by his previous work creating acclaimed biomedical animations for CSIRO, Garvan Institutes and Monash University.</li>
-                </ul>
-            </div>
-        </div>   
-    </div>
-</div>
-<br>
-    <footer class="page-footer font-small blue" style="background-color: whitesmoke">
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="index.html">virtx.online</a>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="js/video_parallax.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://cdn.rawgit.com/thiagopnts/kaleidoscope/master/dist/kaleidoscope.min.js"> </script>
-    <script src="js/main.js"></script>
-</body>
+		<!--Jumbo: What we are-->
+		<div class="container-fluid">
+			<div class="row mt-4">
+				<div class="col">
+					<span id="what-we-are"></span>
+					<h1 class="text-center h1">What We Are</h1>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-sm-6">
+					<img
+						src="assets/img/whoweare.jpg"
+						class="img-fluid img-thumbnail"
+						style="display: block; margin: auto;"
+					/>
+				</div>
+				<div class="col-sm-5">
+					<p class="lead text-left mt-3 text-white">
+						<em>
+							VirtX is a multi-disciplinary team of researchers,
+							educators, industry partners, and students loosely
+							based around the University of Sydney who are
+							passionate about XR.<br />
+							Established at the University of Sydney Techlab in
+							2018, this team openly shares resources for bringing
+							XR to the masses, through workshops, demonstrations,
+							free content and openly published research.
+						</em>
+					</p>
+				</div>
+			</div>
+		</div>
+		<br />
+		<!--Jumbo: Members-->
+		<div class="container-fluid">
+			<span id="members"></span>
+			<h1 class="text-center mb-3">Members</h1>
+			<div class="owl-carousel owl-theme member-container">
+				<div class="member-card card">
+					<img
+						class="card-img-top img-thumbnail"
+						src="assets/member_imgs/JimCook.jpg"
+					/>
+					<div class="card-body">
+						<h4 class="card-title">Jim Cook</h4>
+						<p class="card-text">
+							Innovation Lead, the University of Sydney Techlab
+						</p>
+						<ul>
+							<li>
+								6 years Virtual and Mixed Reality development
+								experience.
+							</li>
+							<li>
+								Specialist in emerging technology in education.
+							</li>
+							<li>
+								Founder of the Precognition Factory, Australia's
+								leading Industry X.0 consultancy.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-card card">
+					<img
+						class="card-img-top img-thumbnail"
+						src="assets/member_imgs/MartinBrown.png"
+						alt="Card image cap"
+					/>
+					<div class="card-body">
+						<h4 class="card-title">Martin Brown</h4>
+						<p class="card-text">Educational Design Manager</p>
+						<ul>
+							<li>Filmmaker and media practitioner</li>
+							<li>Founder AFTRS Innovation Lab</li>
+							<li>
+								Manager, Westmead Innovative Technology Steering
+								Group
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-card card">
+					<img
+						class="img-fluid img-thumbnail"
+						src="assets/member_imgs/PhillipGough.jpg"
+						alt="Card image cap"
+					/>
+					<div class="card-body">
+						<h4 class="card-title">Phillip Gough</h4>
+						<p class="card-text">
+							Lecturer in Curriculum Innovation, School of Life
+							and Environmental Sciences, The University of Sydney
+						</p>
+						<ul>
+							<li>
+								Digital artist, designer and creative
+								technologist
+							</li>
+							<li>
+								Researching creative modes of data visualisation
+							</li>
+							<li>
+								Exploring how to teach creative and designerly
+								methods and technologies in the undergraduate
+								science curriculum
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-card card">
+					<img
+						class="img-fluid img-thumbnail"
+						src="assets/member_imgs/TeganCheng.jpg"
+						alt="Card image cap"
+					/>
+					<div class="card-body">
+						<h4 class="card-title">Tegan Cheng</h4>
+						<p class="card-text">
+							Biomedical engineer and scientist, Kids Research
+							Institute at the Children's Hospital at Westmead.
+						</p>
+						<ul>
+							<li>Tissue engineer</li>
+							<li>
+								Developer of novel orthopedic devices for
+								children
+							</li>
+							<li>
+								specialist in the integration of 3D scanning and
+								printing technologies into clinical practice
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-card card">
+					<img
+						class="img-fluid img-thumbnail"
+						src="assets/member_imgs/PhilipPoronnik.jpeg"
+						alt="Card image cap"
+					/>
+					<div class="card-body">
+						<h4 class="card-title">Philip Poronnik</h4>
+						<p class="card-text">
+							Professor of Biomedical Sciences (Educational
+							Strategy), The University of Sydney.
+						</p>
+						<ul>
+							<li>He attac</li>
+							<li>de rejec</li>
+							<li>but most of all, he protec</li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-card card">
+					<img
+						class="img-fluid img-thumbnail"
+						src="assets/member_imgs/NaseemAhmadpour.jpg"
+						alt="Card image cap"
+					/>
+					<div class="card-body">
+						<h4 class="card-title">Naseem Ahmadpour</h4>
+						<p class="card-text">
+							Professor, The University of Sydney
+						</p>
+						<ul>
+							<li>
+								Design for wellbeing. Inspiring new designs that
+								help us engage with activities that improve our
+								quality of life
+							</li>
+							<li>
+								Emerging technologies can enhance motivation and
+								experiences for self-regulating behaviour and
+								emotions
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-card card">
+					<img
+						class="img-fluid img-thumbnail"
+						src="assets/member_imgs/ChrisHamming.jpg"
+						alt="Card image cap"
+					/>
+					<div class="card-body">
+						<h4 class="card-title">Christopher Hamming</h4>
+						<p class="card-text">
+							Educational Designer, The University of Sydney
+						</p>
+						<ul>
+							<li>
+								Enhancing the digital literacy of life science
+								students.
+							</li>
+							<li>
+								Developing activites where students create
+								virtual reality scenes, science communication
+								videos and visual representations of biological
+								structures and concepts.
+							</li>
+							<li>
+								Projects are informed by his previous work
+								creating acclaimed biomedical animations for
+								CSIRO, Garvan Institutes and Monash University.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-card card">
+					<img
+						class="img-fluid img-thumbnail"
+						src="assets/member_imgs/benjy_promo_square.JPG"
+						alt="Card image cap"
+					/>
+					<div class="card-body">
+						<h4 class="card-title">Benjy Marks</h4>
+						<p class="card-text">
+							Lecturer in the Sydney Centre for Geomechanics and
+							Materials at The University of Sydney
+						</p>
+						<ul>
+							<li>
+								Passionate about using immersive technologies to
+								teach technical content intuitively
+							</li>
+							<li>
+								Part of the team running the Immersive Learning
+								Laboratory
+							</li>
+							<li>
+								AR/VR developer
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row mt-4">
+				<div class="col">
+					<span id="resources"></span>
+					<h1 class="text-center h1">Resources</h1>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-sm-6">
+					<img
+						src="assets/img/resources.jpg"
+						class="img-fluid img-thumbnail"
+						style="display: block; margin: auto;"
+					/>
+				</div>
+				<div class="col-sm-5">
+					<p class="lead text-left mt-3 text-white">
+						VirtX online is curatng a collection of free XR
+						resources developed by our members and Industry
+						partners, click below to access our library.
+					</p>
+					<div class="col text-center">
+						<a
+							href="https://github.com/usydtechlab/VirtX_Resources"
+							target="_blank"
+						>
+							<button class="btn btn-danger">
+								Access Our Library
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="container-fluid partners" style="background-color: white;">
+			<div class="row">
+				<div class="col">
+					<span id="partners"></span>
+					<h1 class="text-center h1 mt-4">Partners</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center mb-3">
+					<a href="https://sydney.edu.au/" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/usyd.jpg"
+					/></a>
+					<a href="http://crlionline.net/" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/crlionline.PNG"
+					/></a>
+					<a href="http://ramus.com.au/" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/ramus.png"
+					/></a>
+					<a href="http://trends.techlab.works/" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/techlab.jpg"
+					/></a>
+					<a href="https://youtu.be/GCvgZKQflCY" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/delphine_plain_text.jpg"
+					/></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center mb-3">
+					<a
+						href="http://transmedia-entertainment.com/"
+						target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/transmedia.png"
+					/></a>
+					<a href="https://www.ustwo.com/" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/ustwo.PNG"
+					/></a>
+					<a href="https://www.kloudppl.com.au/" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/kloudppl.png"
+					/></a>
+					<a
+						href="https://www.wslhd.health.nsw.gov.au/Westmead-Hospital"
+						target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/westmead.png"
+					/></a>
+					<a href="https://www.facebook.com/" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/facebook.jpg"
+					/></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center mb-3">
+					<a href="https://sydney.edu.au/music/" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/usyd_music.png"
+					/></a>
+					<a
+						href="https://sydney.edu.au/engineering/our-research/laboratories-and-facilities/immersive-learning-laboratory.html"
+						target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/ill.png"
+					/></a>
+					<a
+						href="https://sydney.edu.au/arts/schools/sydney-college-of-the-arts.html"
+						target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/sca.png"
+					/></a>
+					<a href="mailto:denouement.vr@gmail.com" target="_blank"
+						><img
+							class="img-fluid img-thumbnail partner-img"
+							width="200"
+							height="200"
+							src="assets/partner_logos/denouement.png"
+					/></a>
+				</div>
+			</div>
+		</div>
+		<footer
+			class="page-footer font-small blue"
+			style="background-color: whitesmoke"
+		>
+			<div class="footer-copyright text-center py-3">
+				© 2018 Copyright:
+				<a href="index.html">virtx.online</a>
+			</div>
+		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+			integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/video_parallax.js"></script>
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+		<script
+			type="text/javascript"
+			charset="utf-8"
+			src="https://cdn.rawgit.com/thiagopnts/kaleidoscope/master/dist/kaleidoscope.min.js"
+		></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
